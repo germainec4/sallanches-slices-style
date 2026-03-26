@@ -59,13 +59,13 @@ const Hero = () => {
         >
           <a
             href="#carte"
-            className="bg-primary text-primary-foreground px-8 py-4 font-body text-sm uppercase tracking-widest font-medium hover:bg-terracotta-dark transition-colors"
+            className="w-full sm:w-64 border-2 border-transparent bg-primary text-primary-foreground px-8 py-4 font-body text-sm uppercase tracking-widest font-bold hover:bg-terracotta-dark transition-colors flex items-center justify-center text-center"
           >
             Découvrir la carte
           </a>
           <a
             href="#contact"
-            className="border-2 border-cream text-cream px-8 py-4 font-body text-sm uppercase tracking-widest font-medium hover:bg-cream hover:text-charcoal transition-colors"
+            className="w-full sm:w-64 border-2 border-cream text-cream px-8 py-4 font-body text-sm uppercase tracking-widest font-bold hover:bg-cream hover:text-charcoal transition-colors flex items-center justify-center text-center"
           >
             Réserver une table
           </a>
