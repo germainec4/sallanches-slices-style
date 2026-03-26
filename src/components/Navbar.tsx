@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, MapPin, X, Menu } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
@@ -17,8 +18,8 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal/95 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <a href="#accueil" className="font-display text-2xl md:text-3xl font-bold text-cream tracking-wide">
-            Mamma Mia!
+          <a href="#accueil" className="flex items-center">
+            <img src={logo} alt="Mamma Mia!" className="h-10 md:h-12 w-auto" />
           </a>
 
           <div className="hidden md:flex items-center gap-8">

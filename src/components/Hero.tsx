@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/pizza-oven.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
@@ -26,15 +27,14 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-bold text-cream leading-[0.9] mb-6"
+          className="mb-6"
         >
-          Mamma<br />
-          <span className="italic text-amber">Mia!</span>
-        </motion.h1>
+          <img src={logo} alt="Mamma Mia!" className="h-32 md:h-48 lg:h-56 w-auto mx-auto" />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
