@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
-            <img src={logo} alt="Mamma Mia!" className="h-16 w-auto mb-2" />
+            <img src={logo} alt="Mamma Mia!" className="h-16 w-auto mb-2 mx-auto md:ml-0 block md:inline" />
             <p className="font-body text-cream/40 text-sm">
               Pizzeria artisanale à Sallanches
             </p>
