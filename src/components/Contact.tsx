@@ -26,7 +26,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 text-primary mb-5">
+            <div className="inline-flex items-center justify-center w-14 h-14 text-primary mb-5">
               <MapPin className="w-6 h-6" />
             </div>
             <h3 className="font-display text-xl text-cream mb-3">Adresse</h3>
@@ -43,7 +43,7 @@ const Contact = () => {
             transition={{ delay: 0.1 }}
             className="text-center"
           >
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 text-primary mb-5">
+            <div className="inline-flex items-center justify-center w-14 h-14 text-primary mb-5">
               <Phone className="w-6 h-6" />
             </div>
             <h3 className="font-display text-xl text-cream mb-3">Nous contacter</h3>
@@ -66,7 +66,7 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="text-center"
           >
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 text-primary mb-5">
+            <div className="inline-flex items-center justify-center w-14 h-14 text-primary mb-5">
               <Clock className="w-6 h-6" />
             </div>
             <h3 className="font-display text-xl text-cream mb-3">Horaires</h3>
