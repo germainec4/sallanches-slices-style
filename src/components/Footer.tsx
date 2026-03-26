@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground">
@@ -5,8 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
-            <h3 className="font-display text-3xl font-bold text-cream mb-2">
-              Mamma Mia!
+            <img src={logo} alt="Mamma Mia!" className="h-16 w-auto mb-2" />
             </h3>
             <p className="font-body text-cream/40 text-sm">
               Pizzeria artisanale à Sallanches
