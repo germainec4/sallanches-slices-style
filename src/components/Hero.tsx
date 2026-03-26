@@ -5,13 +5,18 @@ import logo from "@/assets/logo.png";
 const Hero = () => {
   return (
     <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
+      {/* Background video */}
       <div className="absolute inset-0">
-        <img
-          src={heroImg}
-          alt="Pizza napolitaine sortant du four à bois"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={heroImg}
           className="w-full h-full object-cover"
-        />
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-charcoal/60" />
       </div>
 
