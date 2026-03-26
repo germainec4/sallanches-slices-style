@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/pizza-oven.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (

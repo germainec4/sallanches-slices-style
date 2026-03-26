@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, MapPin, X, Menu } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
