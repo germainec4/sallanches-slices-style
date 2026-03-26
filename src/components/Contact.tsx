@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -19,7 +19,7 @@ const Contact = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-10 md:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -31,9 +31,8 @@ const Contact = () => {
             </div>
             <h3 className="font-display text-xl text-cream mb-3">Adresse</h3>
             <p className="font-body text-cream/60 leading-relaxed">
-              Rue du Mont-Blanc<br />
-              74700 Sallanches<br />
-              France
+              22, rue de la Paix<br />
+              74700 Sallanches
             </p>
           </motion.div>
 
@@ -47,13 +46,29 @@ const Contact = () => {
             <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 text-primary mb-5">
               <Phone className="w-6 h-6" />
             </div>
-            <h3 className="font-display text-xl text-cream mb-3">Réservation</h3>
-            <a href="tel:+33450580000" className="font-body text-amber hover:text-amber/80 transition-colors text-lg">
-              04 50 58 00 00
+            <h3 className="font-display text-xl text-cream mb-3">Téléphone</h3>
+            <a href="tel:+33956230548" className="font-body text-amber hover:text-amber/80 transition-colors text-lg">
+              09 56 23 05 48
             </a>
             <p className="font-body text-cream/40 text-sm mt-2">
               Réservation conseillée le week-end
             </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15 }}
+            className="text-center"
+          >
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 text-primary mb-5">
+              <Mail className="w-6 h-6" />
+            </div>
+            <h3 className="font-display text-xl text-cream mb-3">Email</h3>
+            <a href="mailto:reservations@themagiccollection.com" className="font-body text-amber hover:text-amber/80 transition-colors text-sm break-all">
+              reservations@themagiccollection.com
+            </a>
           </motion.div>
 
           <motion.div
@@ -83,7 +98,7 @@ const Contact = () => {
         >
           <iframe
             title="Localisation Mamma Mia Sallanches"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.258!2d6.6240!3d45.9361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894e3a5b7c6bcd%3A0x408ab2ae4bae590!2sSallanches!5e0!3m2!1sfr!2sfr!4v1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.5!2d6.6313!3d45.9347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894e3b0d3e4c4f%3A0x0!2s22+Rue+de+la+Paix%2C+74700+Sallanches!5e0!3m2!1sfr!2sfr!4v1"
             width="100%"
             height="350"
             style={{ border: 0, filter: "grayscale(0.3) contrast(1.1)" }}
