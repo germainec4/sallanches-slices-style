@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Leaf } from "lucide-react";
 import pizzaMakingImg from "@/assets/pizza-making.jpg";
 
-type MenuItem = { name: string; desc: string; price: string };
+type MenuItem = { name: string; desc: string; price: string; isVeg?: boolean };
 
 const salades: MenuItem[] = [
-  { name: "Salade verte", desc: "", price: "8€" },
-  { name: "Caprese", desc: "Burrata, tomates, pesto de basilic", price: "14€" },
-  { name: "Salade Mamma Mia", desc: "Mesclun de salades, grenade, quinoa, graines de courge, noix, Bleu d'Auvergne", price: "15€" },
+  { name: "Salade verte", desc: "", price: "8€", isVeg: true },
+  { name: "Caprese", desc: "Burrata, tomates, pesto de basilic", price: "14€", isVeg: true },
+  { name: "Salade Mamma Mia", desc: "Mesclun de salades, grenade, quinoa, graines de courge, noix, Bleu d'Auvergne", price: "15€", isVeg: true },
   { name: "Salade nordique", desc: "Roquette, saumon fumé, fromage de chèvre, pignons de pin grillés, oignon rouge caramélisé", price: "17€" },
 ];
 
 const pizzas: MenuItem[] = [
-  { name: "Margherita", desc: "San Marzano AOP tomates, mozzarella, parmesan, basilic", price: "12€" },
-  { name: "Marinara évoluée", desc: "San Marzano AOP tomates, ail, crème de parmesan, origan", price: "14€" },
-  { name: "Parmigiana", desc: "San Marzano AOP tomates, provola, aubergines frites, parmesan râpé, crème de tomate, basilic", price: "17€" },
+  { name: "Margherita", desc: "San Marzano AOP tomates, mozzarella, parmesan, basilic", price: "12€", isVeg: true },
+  { name: "Marinara évoluée", desc: "San Marzano AOP tomates, ail, crème de parmesan, origan", price: "14€", isVeg: true },
+  { name: "Parmigiana", desc: "San Marzano AOP tomates, provola, aubergines frites, parmesan râpé, crème de tomate, basilic", price: "17€", isVeg: true },
   { name: "Diavola", desc: "Crème de parmesan, mozzarella, spianata calabraise épicée, crème de 'nduja, saucisses, ricotta, chips de piment crusco", price: "18€" },
   { name: "Capricciosa", desc: "Crème de parmesan, mozzarella, champignons, olives noires de Gaeta, jambon, tomates cerises, artichauts grillés", price: "18€" },
   { name: "Neapolitan (Sans lactose)", desc: "Sauce tomate San Marzano, câpres, olives noires de Gaeta, anchois siciliens, persil frais", price: "18€" },
   { name: "Calabrese", desc: "Crème de parmesan, mozzarella, 'nduja, saucisse, provola fumée, friarielli", price: "18€" },
-  { name: "6 Fromages", desc: "Crème de parmesan, mozzarella, reblochon, toma de Savoie, fromage de chèvre, bleu d'Auvergne", price: "20€" },
+  { name: "6 Fromages", desc: "Crème de parmesan, mozzarella, reblochon, toma de Savoie, fromage de chèvre, bleu d'Auvergne", price: "20€", isVeg: true },
 ];
 
 const pizzasSpeciales: MenuItem[] = [
@@ -33,9 +34,9 @@ const pizzasSpeciales: MenuItem[] = [
 const plats: MenuItem[] = [
   { name: "Spaghetti carbonara", desc: "Spaghetti frais, guanciale, pecorino, jaune d'œuf, poivre noir", price: "17€" },
   { name: "Pappardelle au canard", desc: "Pâtes fraîches au ragù de canard", price: "17€" },
-  { name: "Gnocchi à la sorrentina", desc: "Gnocchi de pommes de terre, crème de burrata, tomates cerises, gouttes de pesto, gratiné parmesan", price: "17€" },
-  { name: "Délice à la truffe", desc: "Raviolis à la truffe, fondue de reblochon", price: "19€" },
-  { name: "Aubergine du chef", desc: "Aubergine rôtie, provola fumée, sauce tomate, crème de parmesan, pesto de basilic", price: "19€" },
+  { name: "Gnocchi à la sorrentina", desc: "Gnocchi de pommes de terre, crème de burrata, tomates cerises, gouttes de pesto, gratiné parmesan", price: "17€", isVeg: true },
+  { name: "Délice à la truffe", desc: "Raviolis à la truffe, fondue de reblochon", price: "19€", isVeg: true },
+  { name: "Aubergine du chef", desc: "Aubergine rôtie, provola fumée, sauce tomate, crème de parmesan, pesto de basilic", price: "19€", isVeg: true },
   { name: "Tortelloni au saumon", desc: "Tortelloni, saumon, crème de mascarpone, zeste de citron", price: "19€" },
   { name: "Risotto milanais 2.0", desc: "Risotto au safran, ragù d'ossobuco", price: "20€" },
   { name: "Cannellone à l'Émilienne", desc: "Cannellone, ragù de bœuf, béchamel, parmesan", price: "20€" },
@@ -148,8 +149,11 @@ const MenuSection = () => {
                   className="border-b border-cream/10 py-4 group"
                 >
                   <div className="flex justify-between items-baseline mb-1 gap-4">
-                    <h3 className="font-display text-lg md:text-xl text-cream group-hover:text-amber transition-colors">
+                    <h3 className="font-display text-lg md:text-xl text-cream group-hover:text-amber transition-colors flex items-center gap-2">
                       {item.name}
+                      {item.isVeg && (
+                        <Leaf className="w-3.5 h-3.5 text-emerald-500 fill-emerald-500/20" />
+                      )}
                     </h3>
                     <span className="font-display text-lg text-amber font-semibold shrink-0">
                       {item.price}
