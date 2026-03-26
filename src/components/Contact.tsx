@@ -46,29 +46,17 @@ const Contact = () => {
             <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 text-primary mb-5">
               <Phone className="w-6 h-6" />
             </div>
-            <h3 className="font-display text-xl text-cream mb-3">Téléphone</h3>
+            <h3 className="font-display text-xl text-cream mb-3">Nous contacter</h3>
             <a href="tel:+33956230548" className="font-body text-amber hover:text-amber/80 transition-colors text-lg">
               09 56 23 05 48
+            </a>
+            <br />
+            <a href="mailto:reservations@themagiccollection.com" className="font-body text-amber hover:text-amber/80 transition-colors text-sm">
+              reservations@themagiccollection.com
             </a>
             <p className="font-body text-cream/40 text-sm mt-2">
               Réservation conseillée le week-end
             </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.15 }}
-            className="text-center"
-          >
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 text-primary mb-5">
-              <Mail className="w-6 h-6" />
-            </div>
-            <h3 className="font-display text-xl text-cream mb-3">Email</h3>
-            <a href="mailto:reservations@themagiccollection.com" className="font-body text-amber hover:text-amber/80 transition-colors text-sm break-all">
-              reservations@themagiccollection.com
-            </a>
           </motion.div>
 
           <motion.div
