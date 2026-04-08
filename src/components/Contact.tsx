@@ -26,7 +26,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="inline-flex items-center justify-center w-14 h-14 text-primary mb-5">
+            <div className="inline-flex items-center justify-center w-14 h-14 text-primary mb-2">
               <MapPin className="w-6 h-6" />
             </div>
             <h3 className="font-display text-xl text-cream mb-3">Adresse</h3>
