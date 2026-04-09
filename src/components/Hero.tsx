@@ -72,11 +72,11 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator - desktop only */}
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <div className="w-6 h-10 border-2 border-cream/40 rounded-full flex justify-center pt-2">
           <div className="w-1.5 h-1.5 bg-cream/60 rounded-full" />
