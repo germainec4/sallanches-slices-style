@@ -117,7 +117,7 @@ const MenuSection = () => {
                 Notre <span className="italic text-amber">menu</span>
               </h2>
               <p className="font-body text-cream/60 mb-8">
-                Toutes nos préparations sont faites maison par notre équipe de cuisine et de pâtisserie.
+                Toutes nos préparations sont faites maison par notre équipe de passionnés.
               </p>
             </motion.div>
 

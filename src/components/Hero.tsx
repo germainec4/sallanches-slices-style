@@ -59,7 +59,7 @@ const Hero = () => {
         >
           <a
             href="#carte"
-            className="w-full sm:w-64 border-2 border-transparent bg-primary text-primary-foreground px-8 py-4 font-body text-sm uppercase tracking-widest font-bold hover:bg-terracotta-dark transition-colors flex items-center justify-center text-center"
+            className="w-full sm:w-64 border-2 border-transparent bg-[#BE3B37] text-primary-foreground px-8 py-4 font-body text-sm uppercase tracking-widest font-bold hover:brightness-110 transition-colors flex items-center justify-center text-center"
           >
             Découvrir la carte
           </a>
